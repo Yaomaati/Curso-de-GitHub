@@ -4,6 +4,6 @@ Estoy aprendiendo a usar Git
 
 En Platzi, si.
 
-Ahora cambie el archivo, si, si.
+De acuerdo, éste es el enecimo cambio que le hago al mismo archivo, pero estoy dominando como usar Git.
 
-Ahora con mi proyecto creado hago cambios adicionales con multiples archivos.
+Trikitrakatelas
