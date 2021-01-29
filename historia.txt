@@ -1,9 +1,0 @@
-Hola Soy Donovan
-
-Estoy aprendiendo a usar Git
-
-En Platzi, si.
-
-De acuerdo, éste es el enecimo cambio que le hago al mismo archivo, pero estoy dominando como usar Git.
-
-Trikitrakatelas

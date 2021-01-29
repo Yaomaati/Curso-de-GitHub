@@ -1,0 +1,37 @@
+Ahora que ya hice varios cambios en Git usaré éste documento para prácticar, y de paso hacer mis notas.
+
+Primero que nada es necesario instalar y configurar adecuadamente Git
+
+El siguiente paso a seguir es crear un nombre de usuario y mail para que se guarde como referencia de los commit
+
+Posteriormente es necesario generar una clave SSH, que ya ví, pero tendré que repasar mas adelante.
+(Se entiende como clave SSH como información cifrada que nos permite encriptar información y tener control de quién puede leer la información que enviamos mediante Git)
+
+Ahora lo proximo que haremos es iniciar en la carpeta que sera nuestro entorno de trabajo principal con el comando "git init"
+Este comando lo que hará es crear el "master" del proyecto en git, y a partir de aquí controlar los cambios. 
+
+Hecho ésto debemos entender que hay 3 partes del proceso de trabajar en un proceso, y cada parte de ese proceso tiene un "espacio".
+
+Esto es para mantener un contról de los cambios y evitar contratiempos, y al mismo tiempo supervisar adecuadamente los cambios.
+Los espacios de trabajo son:
+Directorio: Que es el espacio de trabajo del desarrollador, donde solo él puede ver los cambios.
+Staging: Es el espacio en RAM que guarda los archivos modificados y los tiene listos antes de enviarse al proyecto principal.
+Repositorio: Este podría considerarse como el proyecto principal y es la versión "definitiva" de los cambios añadidos del Staging.
+
+Recordando que para iniciar el proyecto en Git, hay que usar el comando "git init" en el directorio raíz, ahora hay que revisar los comandos para trabajar en staging y el respositorio.
+
+Una vez modificados los archivos en el directorio, para que los cambios pasen al staging hay que utilizar los siguientes comandos:
+"git add (nombre y extensión del archivo)" ó "git add ." para añadir todos los archivos que se encuentren en la carpeta actual.
+
+Parar verificar el estatus de nuestro staging usamos el comando "git status". Esto nos mostrará si hay archivos con modificaciones que podamos añadir al staging.
+Si éste es el caso hay que ejecutar el comando "git add" para enviar esos cambios al staging.
+
+Una vez que esten los cambios que consideremos pertinentes en el staging y querramos añadirlos al repositorio haremos un "commit"
+
+La manera de realizar éste commit es con el comando "git commit -m "mensaje descriptivo del cambio"
+Aqui es necesario aclarar, que aunque hay maneras de forzar un commit sin usar un mensaje descriptivo, es una MALA PRACTICA, además de que Git, nos dará advertencias para NO hacerlo.
+
+Una vez hecho el commit, los cambios se borrarán del staging, y ahora formarán parte del repositorio y podran ser consultados por cualquiera con acceso a él.
+
+Para verificar los cambios realizados a un repositorio, incluyendo el historial completo de los mismos usaremos el comando "git log"
+Esto arrojará información de la fecha, hora, usuario, cambios y una clave ligada a dichos cambios, para asi poder analizar dichos cambios.
