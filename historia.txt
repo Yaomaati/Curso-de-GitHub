@@ -5,3 +5,5 @@ Estoy aprendiendo a usar Git
 En Platzi, si.
 
 Ahora cambie el archivo, si, si.
+
+Ahora con mi proyecto creado hago cambios adicionales con multiples archivos.
