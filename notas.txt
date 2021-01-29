@@ -35,3 +35,23 @@ Una vez hecho el commit, los cambios se borrarán del staging, y ahora formarán
 
 Para verificar los cambios realizados a un repositorio, incluyendo el historial completo de los mismos usaremos el comando "git log"
 Esto arrojará información de la fecha, hora, usuario, cambios y una clave ligada a dichos cambios, para asi poder analizar dichos cambios.
+
+Al usar "git log" es necesario especificar que archivo es el que queremos examinar, de lo contrario se veran reflejados los cambios de todos los archivos cambiados simultaneamente.
+Ej si quiero consultar cambios en el archivo estilos.css mi comando será "git log estilos.css"
+
+Una vez elegido el archivo, el comando utilizado para comparar las distintas versiones será: "git diff"
+
+La manera de usar éste comando es introducir git diff (serie númerica del cambio en git) (serie númerica del cambio en git)
+El orden en que se introduscan las series numericas debe ser del mas antiguo al mas novedoso, ya que así es como GIT interpretará los cambios.
+Es decir, si comparamos el mas viejo con el mas nuevo, nos dirá que añadimos al codigo, pero si primero introducimos el archivo nuevo, y luego el viejo, nos dirá que borramos cosas dentro del codigo, aunque ésto no haya sido así.
+
+Existen 2 comandos para "retroceder" dentro versiones de un archivo y son "reset" y "checkout"
+La diferencia entre ellos es que con checkout podremos consultar momentaneamente un archivo, pero en cualquier momento podremos devolver el respositorio a su estado, ANTES de que nosotros lo modifiquemos.
+Es decir, si estoy en la versión 3 y quiero consultar la versión 2, hago "git checkout (serie numerica de versión) (nombre del archivo a consultar)"
+Esto cambiara el repositorio y convertira la versión 3 en la versión 2, y cuando termine de revisar, solo necesito hacer el mismo comando, pero ésta vez seleccionando la serie numerica correspondiente a la versión 3
+
+El segundo comando "reset" es sumamente peligroso, ya que, a diferencia de chekcout, no nos permite deshacer cambios. 
+Si seleccionamos una version antigua del programa, nos situará en dicha versión, pero borrará PERMANENTEMENTE todas las versiones posteriores a la versión seleccionada.
+La forma de implementarla sería: "git reset (serie numerica de versión) (nombre de archivo)"
+Nuevamente, usar "reset" borrará PERMANENTEMENTE todos los cambios posteriores a la versión seleccionada.
+
