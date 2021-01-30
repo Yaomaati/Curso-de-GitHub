@@ -17,4 +17,4 @@ El comando para realizar dicha acción se llama "merge" que básicamente unifica
 SIEMPRE Y CUANDO NO EXISTAN CONFLICTOS ENTRE LAS RAMAS, es decir, que el codigo y/o los archivos no hayan sido modificados simultaneamente por 2 personas en el mismo punto, en cuyo caso ésto creará un conflicto.
 
 
-este es un testeo de merge si si si
+Ahora voy a crear un conflicto entre lineas
