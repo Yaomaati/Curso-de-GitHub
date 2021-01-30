@@ -15,3 +15,6 @@ Cabe aclarar que el orden y metodo en el que se ejecuten los comandos será dete
 
 El comando para realizar dicha acción se llama "merge" que básicamente unifica las ramas creadas dando un solo proyecto unificado.
 SIEMPRE Y CUANDO NO EXISTAN CONFLICTOS ENTRE LAS RAMAS, es decir, que el codigo y/o los archivos no hayan sido modificados simultaneamente por 2 personas en el mismo punto, en cuyo caso ésto creará un conflicto.
+
+
+este es un testeo de merge si si si
