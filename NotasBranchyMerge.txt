@@ -1,0 +1,17 @@
+Dentro del entorno de trabajo de Git existe algo llamado "ramas", éstas ramas lo que permiten es que multiples personas trabajen directamente 
+
+Para ésto, hay que entrar a la carpeta "master" o principal a partir de la cuál se creará una rama nueva.
+El comando para ésto será: "git branch (nombre de la rama)"
+
+Esta acción creará una nueva rama a la cuál debemos desplazarnos para poder comenzar a trabajar.
+El comando para ésto será: "git checkout (nombre de la rama nueva)"
+
+Ahora, aunque nos encontremos en una misma carpeta estaremos creando una rama sobre la cuál podremos trabajar sin afectar en lo mas minimo al proyecto principal.
+
+Un ejemplo de ello es poder editar dentro de un mismo archivo html, contenido, y estilos simultaneamente.
+Eligiendo una rama principal para cambiar el contenido, mientras que en la rama nueva puede asignarse como area de trabajo para editar los diseños.
+
+Cabe aclarar que el orden y metodo en el que se ejecuten los comandos será determinante al momento de guardar los cambios e integrar todo en un solo proyecto nuevamente.
+
+El comando para realizar dicha acción se llama "merge" que básicamente unifica las ramas creadas dando un solo proyecto unificado.
+SIEMPRE Y CUANDO NO EXISTAN CONFLICTOS ENTRE LAS RAMAS, es decir, que el codigo y/o los archivos no hayan sido modificados simultaneamente por 2 personas en el mismo punto, en cuyo caso ésto creará un conflicto.
