@@ -41,3 +41,10 @@ git tag -a v0.1 -m "Mensaje de la versión" (Clave del commit al que querramos a
 Una vez hecho ésto podrá consultarse que tags hay disponibles en el proyecto usando el comando:
 git tag
 
+Pueden presentarse 2 fallos al actualizar los tags. El primero es que no se reflejen los cambios de los tags en GitHub al hacer "push", en cuyo caso se usa el comando:
+git push origin master --tags
+Esto enviará una actualización directamente a los tags del proyecto.
+
+El segundo error es que si se elimina un tag del entorno local y el cambio no se ve reflejado en GitHub, conservando el tag que queremos borrar se usara el comando:
+git push origin :refs/tags/(nombre del tag a borrar)
+Esto elimina el tag especifico seleccionado.
