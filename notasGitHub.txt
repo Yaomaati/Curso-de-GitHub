@@ -48,3 +48,5 @@ Esto enviará una actualización directamente a los tags del proyecto.
 El segundo error es que si se elimina un tag del entorno local y el cambio no se ve reflejado en GitHub, conservando el tag que queremos borrar se usara el comando:
 git push origin :refs/tags/(nombre del tag a borrar)
 Esto elimina el tag especifico seleccionado.
+
+Cree una nueva rama para subirla a GitHub
