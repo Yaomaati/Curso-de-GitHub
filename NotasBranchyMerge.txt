@@ -18,3 +18,5 @@ SIEMPRE Y CUANDO NO EXISTAN CONFLICTOS ENTRE LAS RAMAS, es decir, que el codigo 
 
 
 Ahora voy a crear un conflicto entre lineas
+
+Ya solucioné el conflicto entre lineas y ahora estoy haciendo pruebas para añadir lineas a GitHub desde mi pc
