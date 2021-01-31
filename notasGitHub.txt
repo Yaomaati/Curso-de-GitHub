@@ -22,3 +22,5 @@ git log > log.txt - guardar los logs en un archivo txt
 
 
 Ahora estoy haciendo una edición del proyecto directamente desde la interfáz de GitHub
+
+Ya tengo conectadas mis llaves SSH entre mi pc y GitHub, hora de actualizar todo.
