@@ -24,3 +24,20 @@ git log > log.txt - guardar los logs en un archivo txt
 Ahora estoy haciendo una edición del proyecto directamente desde la interfáz de GitHub
 
 Ya tengo conectadas mis llaves SSH entre mi pc y GitHub, hora de actualizar todo.
+
+Ahora que esta todo bien configurado hay que supervisar las etiquetas y versiones. Primero que nada el comando para ver el historico de cambios de una manera compacta es:
+git log --all --graph --decorate --oneline
+
+Esta cadena de comandos puede ser resumida creando un "alias" dentro de Linux. Lo cuál permite sintetizar una linea de comando en un solo termino. Ejemplo:
+alias historico="git log --all --graph --decorate --oneline"
+
+El alias introducido quedará guardado en un entorno local, solo hay que tener precaución de recordar éste detalle y que hay que volver a crear dichos alias al cambiar a otro entorno de trabajo.
+
+
+Respecto a los "tags". Son etiquetas de "versión" que uno añade a los commits para tener contról y organización en el proyecto.
+La linea de comando utilizada para ésto sería la siguiente:
+git tag -a v0.1 -m "Mensaje de la versión" (Clave del commit al que querramos añadir el tag)
+
+Una vez hecho ésto podrá consultarse que tags hay disponibles en el proyecto usando el comando:
+git tag
+
